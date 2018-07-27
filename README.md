@@ -32,11 +32,13 @@ The goals / steps of this project are the following:
 
 I used the numpy library to calculate summary statistics of the traffic signs data set:
 
-* The size of training set is 34799
-* The size of the validation set is 4410
-* The size of test set is 12630
-* The shape of a traffic sign image is 32, 32, 3
-* The number of unique classes/labels in the data set is 43
+| Item			         	     |  Size	    | 
+|:------------------------------:|:------------:| 
+| Size of training set  	     | 34799 	    | 
+| Size of the validation set     | 4410  		|
+| Size of test set				 | 12630		|
+| Shape of a traffic sign image	 | 32, 32, 3    |
+| Number of unique labels		 | 43 	   		|
 
 #### Visualization of the dataset.
 
@@ -50,11 +52,13 @@ I also wanted to view some of the sign data, so I added some logic in the notebo
 #### Preprocessing 
 
 **Greyscaling**
-As a first step, I converted the images to grayscale.  When examine the data above, I noticed several minor differences in lighting/brightness which I suspect may have influenced the training operation.  Since color was not as important as the sign symbols themselves, it seemed like a good idea to remove color from the equation.     
+
+As a first step, I converted the images to grayscale.  When examining the data above, I noticed several minor differences in lighting/brightness which I suspect may have influenced the training operation.  Since color was not as important as the sign symbols themselves, it seemed like a good idea to remove color from the equation.     
 
 Also, when reading the [successful study](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) of this same problem, which achieved 99.17% accuracy, they suggested grey scaling the data played a bit part in this.
 
 **Normalization**
+
 As a last step, I normalized the image data so that the data has mean zero and equal variance.  It seems this is a common image preprocessing step. 
 
 #### Model architecture
