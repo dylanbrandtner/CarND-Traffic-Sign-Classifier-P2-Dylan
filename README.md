@@ -51,13 +51,13 @@ I also wanted to view some of the sign data, so I added some logic in the notebo
 
 #### Preprocessing 
 
-**Greyscaling**
+##### Greyscaling
 
 As a first step, I converted the images to grayscale.  When examining the data above, I noticed several minor differences in lighting/brightness which I suspect may have influenced the training operation.  Since color was not as important as the sign symbols themselves, it seemed like a good idea to remove color from the equation.     
 
-Also, when reading the [successful study](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) of this same problem, which achieved 99.17% accuracy, they suggested grey scaling the data played a bit part in this.
+Also, when reading the [successful study](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) of this same problem, which achieved 99.17% accuracy, they suggested grey scaling the data played a signficant part in their success.
 
-**Normalization**
+##### Normalization
 
 As a last step, I normalized the image data so that the data has mean zero and equal variance.  It seems this is a common image preprocessing step. 
 
@@ -65,7 +65,9 @@ As a last step, I normalized the image data so that the data has mean zero and e
 
 My final model was essentially pulled from the LeNet lab. It has two convolutional layers with max pooling and RELU activation, a flattening layer, and then 3 fully connected layers with REUL activation.
 
-Below is a description of the LeNet architecture for a 32x32x1 greyscale image with 43 output labels.
+Modified architecture diagram from LeNet lecture: ![alt text][image2]
+
+Below is a description of the LeNet architecture for a 32x32x1 input greyscale image with 43 output labels.
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -85,7 +87,7 @@ Below is a description of the LeNet architecture for a 32x32x1 greyscale image w
 | Softmax				| Applied to get probabilities					|
 |						|												| 
 
-![alt text][image2]
+
 
 #### Training
 
@@ -135,6 +137,10 @@ Here are the results of the prediction:
 The model was able to correctly guess all 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 94.1%
 
 #### Model certainty 
+
+These are the top 5 softmax probabilities for each sign from the model.  
+
+NOTE: Results are rounded to 10 decimal places.  Image 3 shows "100%" for "Yield" and 0 for the rest because the actual amounts were simply less 0.0000000001%.
 
 **Image 1: Speed limit (30km/h)**
 
