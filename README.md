@@ -105,20 +105,20 @@ My final accuracy was:
 * 94.1% on the test set 
 
 
-### Test a Model on New Images
+### Testing the Model on New Images
 
 #### Five German traffic signs found on the web 
 
-Here are five German traffic signs that I found on the web:
+Here are five German traffic sign images that I found on the web:
 
 ![alt text][image3] ![alt text][image4] ![alt text][image5] ![alt text][image6] ![alt text][image7]
 
 I cropped them down to only include the signs.  
 
 **Challenges for the model** 
-* Image 1,2 and 5 included a lot of background noise.  
-* Image 2 had some shadows.  
-* Image 4 had a watermark.  
+* Image 1,2 and 5 include a lot of background noise.  
+* Image 2 has some shadows.  
+* Image 4 has a watermark.  
 * Image 5 has another sign peeking out in the background 
 
 #### Model's predictions
