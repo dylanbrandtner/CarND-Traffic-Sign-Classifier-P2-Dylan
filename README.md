@@ -193,3 +193,5 @@ NOTE: Results are rounded to 10 decimal places.  Image 3 shows "100%" for "Yield
 | Ahead only              |   0.0000061633%      |
 | Speed limit (60km/h)    |   0.0000054985%      |
 
+
+As you can see, the model's certainty for all 5 signs was above 99% for the correct label.  If I had more time, I would have liked to see how it faired with even more challenging images. 
