@@ -140,7 +140,7 @@ The model was able to correctly guess all 5 traffic signs, which gives an accura
 
 These are the top 5 softmax probabilities for each sign from the model.  
 
-NOTE: Results are rounded to 10 decimal places.  Image 3 shows "100%" for "Yield" and 0 for the rest because the actual amounts were simply less 0.0000000001%.
+NOTE: Results are rounded to 10 decimal places.  Image 3 shows "100%" for "Yield" and 0 for the rest because the actual amounts were less than 0.0000000001%.
 
 **Image 1: Speed limit (30km/h)**
 
