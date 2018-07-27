@@ -1,9 +1,9 @@
-# **Traffic Sign Recognition using Deep Learning** 
+# **Traffic Sign Recognition Using Deep Learning** 
 
 ## Writeup
 
 ---
-**Build a Traffic Sign Recognition Project**
+**Goal: Build a Neural Network to Recognize Traffic Signs**
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
