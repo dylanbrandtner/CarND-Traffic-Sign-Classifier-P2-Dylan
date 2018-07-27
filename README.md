@@ -1,4 +1,4 @@
-# **Traffic Sign Recognition** 
+# **Traffic Sign Recognition using Deep Learning** 
 
 ## Writeup
 
@@ -65,7 +65,7 @@ As a last step, I normalized the image data so that the data has mean zero and e
 
 My final model was essentially pulled from the LeNet lab. It has two convolutional layers with max pooling and RELU activation, a flattening layer, and then 3 fully connected layers with REUL activation.
 
-Modified architecture diagram from LeNet lecture: ![alt text][image2]
+Modified LeNet neural network architecture diagram from LeNet lecture: ![alt text][image2]
 
 Below is a description of the LeNet architecture for a 32x32x1 input greyscale image with 43 output labels.
 
@@ -91,7 +91,7 @@ Below is a description of the LeNet architecture for a 32x32x1 input greyscale i
 
 #### Training
 
-To train the model, I used a lot of python source from the LeNet lab.  This code uses 20 epochs, a batch size of 128, and a learning rate of .001.  It calculates loss using softmax cross entropy.  It minimizes loss using the Adam Optimizer which is built into TensorFlow.  It then checks the model on the validation set and outputs an accuracy. 
+To train the model, I reused a lot of the python source code from the LeNet lab.  This code uses 20 epochs, a batch size of 128, and a learning rate of .001.  It calculates loss using softmax cross entropy.  It minimizes loss using the Adam Optimizer which is built into TensorFlow.  It then checks the model on the validation set and outputs an accuracy. 
 
 #### Improving Validation Accuracy
 
